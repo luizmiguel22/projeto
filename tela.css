@@ -1,0 +1,84 @@
+.foto1 {
+    margin-top: 5rem;
+    background-image: url(https://webvolei.com.br/wp-content/uploads/2023/06/424106_1063994_honorato_brasil_argentina_volleyballworld_web_-1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+
+.foto2 {
+    background-image: url(https://media.torcedores.com/wp-content/uploads/2024/06/bruninho-selecao-brasileira-volei.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top
+}
+
+.foto3 {
+    background-image: url(https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2023/10/darlan-volei-2.jpg);
+    background-size: cover
+}
+
+.foto4 {
+    background-image: url(https://www.olimpiadatododia.com.br/wp-content/uploads/2021/06/Lucarelli-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto5 {
+    background-image: url(https://uploads.metropoles.cloud/wp-content/uploads/2023/01/19134612/foto-Lucao-Mundial-Volei-11092022.jpg);
+    background-size: cover;
+}
+
+.foto6 {
+    background-image: url(https://s21466.pcdn.co/wp-content/uploads/2017/07/BraziliansRicardoLucarelliandThalesHosspreparedtoreceive.jpg);
+    background-size: cover;
+}
+
+.foto7 {
+    background-image: url(https://www.olimpiadatododia.com.br/wp-content/uploads/2019/10/brasil-canada-copa-mundo-volei-masculino-alan.jpg);
+    background-size: cover;
+}
+
+.jogador {
+    height: 100vh;
+    width: 98.5vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+    background-color: black;
+}
+
+.bo {
+    border: 0.065rem;
+    height: 12.75rem;
+    width: 20.625rem;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+}
+
+#menu {
+    justify-content: space-around;
+    display: flex;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    align-items: center;
+    height: 30px;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 3.75rem;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
