@@ -5,6 +5,7 @@
     width: 100%;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 .foto2 {
@@ -12,40 +13,51 @@
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-position: top
+    background-position: top;
+    position: relative;
 }
 
 .foto3 {
     background-image: url(https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2023/10/darlan-volei-2.jpg);
-    background-size: cover
+    background-size: cover;
+    position: relative;
 }
 
 .foto4 {
     background-image: url(https://www.olimpiadatododia.com.br/wp-content/uploads/2021/06/Lucarelli-1.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .foto5 {
     background-image: url(https://uploads.metropoles.cloud/wp-content/uploads/2023/01/19134612/foto-Lucao-Mundial-Volei-11092022.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .foto6 {
     background-image: url(https://s21466.pcdn.co/wp-content/uploads/2017/07/BraziliansRicardoLucarelliandThalesHosspreparedtoreceive.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .foto7 {
     background-image: url(https://www.olimpiadatododia.com.br/wp-content/uploads/2019/10/brasil-canada-copa-mundo-volei-masculino-alan.jpg);
     background-size: cover;
+    position: relative;
 }
-.foto8{background-image: url(https://i.ytimg.com/vi/CwtPW0ZhKWY/maxresdefault.jpg);
-    background-size: cover;}
+
+.foto8 {
+    background-image: url(https://i.ytimg.com/vi/CwtPW0ZhKWY/maxresdefault.jpg);
+    background-size: cover;
+    position: relative;
+}
 
 .jogador {
     height: 100vh;
-    width: 98.5vw;
+    width: 100vw;
+    position: relative;
 }
 
 body {
@@ -53,15 +65,24 @@ body {
     padding: 0;
     height: 300vh;
     background-color: black;
+    font-family: "Roboto Slab", serif;
 }
 
 .bo {
-    border: 0.065rem;
-    height: 12.75rem;
-    width: 20.625rem;
-    color: #fff;
+    border: 0.125rem solid #fff;
+    max-height: 12.75rem;
+    max-width: 20.625rem;
+    color: #000;
     font-family: "Roboto Slab", serif;
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #menu {
@@ -72,7 +93,7 @@ body {
     align-items: center;
     height: 30px;
     position: fixed;
-    background-color: rgb(2, 2, 2,0.5);
+    background-color: rgba(2, 2, 2, 0.5);
     width: 100%;
     padding: 0;
     margin: 0;
