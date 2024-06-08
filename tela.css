@@ -40,6 +40,8 @@
     background-image: url(https://www.olimpiadatododia.com.br/wp-content/uploads/2019/10/brasil-canada-copa-mundo-volei-masculino-alan.jpg);
     background-size: cover;
 }
+.foto8{background-image: url(https://i.ytimg.com/vi/CwtPW0ZhKWY/maxresdefault.jpg);
+    background-size: cover;}
 
 .jogador {
     height: 100vh;
@@ -70,7 +72,7 @@ body {
     align-items: center;
     height: 30px;
     position: fixed;
-    background-color: black;
+    background-color: rgb(2, 2, 2,0.5);
     width: 100%;
     padding: 0;
     margin: 0;
