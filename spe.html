@@ -5,34 +5,359 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <style>
         body {
             padding: 0;
             margin: 0;
-            box-sizing: 0;
+            box-sizing: border-box;
+            height: 320vh;
+            font-family: "PT Serif", serif;
+            font-weight: 510;
+            font-style: 20px;
         }
 
         .lei {
             background-image: url(https://assets.specialized.com/i/specialized/RovalRapid_3q_Desktop_HP_Image_1?$scom-herobanner-landscape-md$&fmt=auto);
             width: 100%;
-            height: 34rem;
-            border: solid;
+            height: 46rem;
+            border: none;
             background-size: cover;
-        
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin-top: 16px;
         }
-        .pes{display: flex;
+
+        .pes {
+            display: flex;
+            box-shadow: 0 0 2px 0 black;
+            height: 60px;
+            padding: 0 96px 16px;
+            gap: 20px;
         }
-        .oi{height: 25px;
-        border: none;
-     background-color: rgba(255, 255, 255, 0.596);}
+
+        .oi {
+            height: 25px;
+            margin-top: 1.4375rem;
+            border: none;
+            background-color: rgba(43, 39, 39, 0.473);
+            border-radius: .3125rem;
+            width: 15.625rem;
+        }
+
+        input {
+            background-color: rgba(255, 255, 255, 0.678);
+        }
+
+        .cab {
+            padding: 16px 96px;
+        }
+
+        .cab a {
+            color: #000000;
+            text-decoration: none;
+            height: 40px;
+            margin-right: 16px;
+        }
+
+        @media (max-width: 48rem) {
+            .lei {
+                height: 31.25rem;
+            }
+        }
+
+        @media (max-width: 30rem) {
+            .lei {
+                height: 18.75rem;
+            }
+
+            .pes {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 80px;
+            }
+
+            .oi {
+                width: 100%;
+                margin-top: .625rem;
+                height: 32px;
+            }
+
+            .cab {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 32px;
+            }
+
+            .cab a {
+                margin-bottom: 8px;
+                color: rgba(75, 75, 75, 0.616);
+            }
+        }
+
+        .bik {
+            border: solid;
+            display: flex;
+        }
+
+        .bik1,
+        .bik2,
+        .bik3 {
+            background-size: cover;
+            width: 22.625rem;
+            height: 22.625rem;
+            border: none;
+        }
+
+        .bik1 {
+            background-image: url(https://assets.specialized.com/i/specialized/93123-30_EPIC-WC-EXPERT-CARB-WHT-PRL_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .bik2 {
+            background-image: url(https://assets.specialized.com/i/specialized/91323-70_EPIC-HT-FRYRED-WHT_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .bik3 {
+            background-image: url(https://assets.specialized.com/i/specialized/97223-00_AETHOS-SW-DI2-BRCH-ABLN-DUNEWHT_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .ob {
+            display: flex;
+            justify-content: center;
+            gap: 2.625rem;
+        }
+
+        h1,
+        p {
+            text-align: center;
+            padding: 0 4rem;
+        }
+
+        .l1 {
+            border: .0313rem solid rgb(143, 135, 135);
+            width: 22.625rem;
+            height: 28.625rem;
+            border-radius: .3125rem;
+            box-shadow: .0125rem .0125rem .0125rem .0125rem;
+            border: none;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        i {
+            margin-top: 1.65rem;
+        }
+
+        .acessorio {
+            display: flex;
+            justify-content: center;
+            gap: 2.625rem;
+            margin-top: 2rem;
+        }
+
+        .acessorio1,
+        .acessorio2,
+        .acessorio3 {
+            background-size: cover;
+            width: 22.625rem;
+            height: 22.625rem;
+            border: none;
+        }
+
+        .acessorio1 {
+            background-image: url(https://assets.specialized.com/i/specialized/60819-043_HLMT_CHAMONIX-HLMT-ANGI-MIPS-CPSC-BLK-M-L_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .acessorio2 {
+            background-image: url(https://assets.specialized.com/i/specialized/61020-514_SHOE_TORCH-10-RD-SHOE-BLK-42_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .acessorio3 {
+            background-image: url(https://assets.specialized.com/i/specialized/64220-390_APP_MOUNTAIN-LINER-BIB-SHORT-WSWAT-MEN-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .compo {
+            display: flex;
+            justify-content: center;
+            gap: 2.625rem;
+            margin-top: 2rem;
+        }
+
+        .compo1,
+        .compo2,
+        .compo3 {
+            background-size: cover;
+            width: 22.625rem;
+            height: 22.625rem;
+            border: none;
+        }
+
+        .compo1 {
+            background-image: url(https://assets.specialized.com/i/specialized/21023-063_CMPNT_ROVAL-RAPIDE-RD-COCKPIT-CARB-BLK-318X420-100MM_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .compo2 {
+            background-image: url(https://assets.specialized.com/i/specialized/00122-502_TIRE_GROUND-CONTROL-CONTROL-2BR-T5-TIRE-TAN-SDWL-29X235_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .compo3 {
+            background-image: url(https://assets.specialized.com/i/specialized/30024-590_WHL_RAPIDE-CLX-II-TEAM-700C_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .roupa {
+            display: flex;
+            justify-content: center;
+            gap: 2.625rem;
+            margin-top: 2rem;
+        }
+
+        .roupa1,
+        .roupa2,
+        .roupa3 {
+            background-size: cover;
+            width: 22.625rem;
+            height: 22.625rem;
+            border: none;
+        }
+
+        .roupa1 {
+            background-image: url(https://assets.specialized.com/i/specialized/64022-480_APP_RBX-MIRAGE-JERSEY-SS-MEN-BLK-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .roupa2 {
+            background-image: url(https://assets.specialized.com/i/specialized/64122-230_APP_RBX-EXPERT-THERMAL-JERSEY-LS-MEN-BLK-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .roupa3 {
+            background-image: url(https://assets.specialized.com/i/specialized/64119-500_APP_RBX-CLASSIC-JERSEY-SS-WMN-BLK-M_HERO_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
+        }
+
+        .marca1 {
+            display: flex;
+            justify-content: center;
+            gap: 2.625rem;
+            margin-top: 2rem;
+            background-image: url(https://i.shgcdn.com/fbc878e3-614f-4396-84f5-b3edbfdabdf5/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+            background-size: cover;
+            height: 50rem;
+
+        }
+
+        .xx {
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: italic;
+        }
     </style>
 </head>
 
 <body>
-    <div class="pes"><h1>SPECIALIZED</h1><input type="text" placeholder="O que você esá procurando?" class="oi"></div>
-    <div class="cab"></div>
+    <div class="pes">
+        <h1 class="xx">SPECIALIZED</h1>
+        <i class="bi bi-search"></i><input type="text" placeholder="O que você está procurando?" class="oi">
+    </div>
+    <div class="cab">
+        <a href="#1" class="oio">bicicletas</a>
+        <a href="#2" class="oio">acessorios</a>
+        <a href="#3" class="oio">componentes</a>
+        <a href="#4" class="oio">vestuários</a>
+        <a href="#5" class="oio">a specialized</a>
+    </div>
     <div class="lei"></div>
-    <div class="ob"></div>
+    <h1 id="1">bicicletas</h1>
+    <p>Perfeição. Difícil de definir, mas fácil de reconhecer. Nós nos especializamos na ciência da perfeição, e todas
+        as bicicletas que fazemos incorporam esta filosofia. Seja qual for a sua motivação ou disciplina, você irá se
+        beneficiar de nossa atenção aos detalhes e de nosso espírito inovador. Então, se você está se sujando em uma
+        bike de cross, dando tudo de si na estrada ou testando seus limites em um triathlon, você pode ficar tranquilo,
+        porque a bike em que você está é simplesmente a melhor.</p>
+    <div class="ob">
+        <div class="l1">
+            <div class="bik1"></div>
+            <p>Bicicleta Epic World Cup Expert</p>
+            <h3>R$ 69.000,00</h3>
+        </div>
+        <div class="l1">
+            <div class="bik2"></div>
+            <p>Bicicleta Epic Hardtail</p>
+            <h3>R$ 19.000,00</h3>
+        </div>
+        <div class="l1">
+            <div class="bik3"></div>
+            <p>Bicicleta S-Works Aethos</p>
+            <h3>R$ 82.000,00</h3>
+        </div>
+    </div>
+
+    <h1 id="2">Acessórios</h1>
+    <div class="acessorio">
+        <div class="l1">
+            <div class="acessorio1"></div>
+            <p>Propero III</p>
+            <h3>R$ 849,00</h3>
+        </div>
+        <div class="l1">
+            <div class="acessorio2"></div>
+            <p>Sapatilha Torch 3.0 Estrada</p>
+            <h3>R$ 500,00</h3>
+        </div>
+        <div class="l1">
+            <div class="acessorio3"></div>
+            <p>Bretelle Interno de Montanha com SWAT™ </p>
+            <h3>R$ 900,00</h3>
+        </div>
+    </div>
+
+    <h1 id="3">Componentes</h1>
+    <div class="compo">
+        <div class="l1">
+            <div class="compo1"></div>
+            <p>Guidão Roval Rapide</p>
+            <h3>R$ 3.500,00</h3>
+        </div>
+        <div class="l1">
+            <div class="compo2"></div>
+            <p>Pneu Ground Control</p>
+            <h3>R$ 300,00</h3>
+        </div>
+        <div class="l1">
+            <div class="compo3"></div>
+            <p>Roda Rapide CLX II</p>
+            <h3>R$ 12.000,00</h3>
+        </div>
+    </div>
+
+    <h1 id="4">vestuários</h1>
+    <div class="roupa">
+        <div class="l1">
+            <div class="roupa1"></div>
+            <p>Jersey RBX Mirage Manga Curta </p>
+            <h3>R$ 500,00</h3>
+        </div>
+        <div class="l1">
+            <div class="roupa2"></div>
+            <p>Jersey RBX Expert Thermal </p>
+            <h3>R$ 500,00</h3>
+        </div>
+        <div class="l1">
+            <div class="roupa3"></div>
+            <p>Jersey RBX Classic Manga Curta </p>
+            <h3>R$ 500,00</h3>
+        </div>
+    </div>
+    <div id="5" class="marca">
+        <h1>"Desde que Mountain Bikes Existem, Existe a Stumpjumper"</h1>
+        <div>
+            <div class="marca1"></div>
+        </div>
+    </div>
 </body>
 
 </html>
