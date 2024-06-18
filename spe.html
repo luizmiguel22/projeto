@@ -9,332 +9,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
-    <style>
-        body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 320vh;
-    font-family: "PT Serif", serif;
-    font-weight: 510;
-    font-size: 20px; /* corrected property */
-}
+    <link rel="stylesheet" href="spe.css">
 
-.lei {
-    background-image: url(https://assets.specialized.com/i/specialized/RovalRapid_3q_Desktop_HP_Image_1?$scom-herobanner-landscape-md$&fmt=auto);
-    width: 100%;
-    height: 46rem;
-    border: none;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin-top: 16px;
-}
-
-.pes {
-    display: flex;
-    box-shadow: 0 0 2px 0 black;
-    height: 60px;
-    padding: 0 96px 16px;
-    gap: 20px;
-}
-
-.oi {
-    height: 25px;
-    margin-top: 1.4375rem;
-    border: none;
-    background-color: rgba(43, 39, 39, 0.473);
-    border-radius: .3125rem;
-    width: 15.625rem;
-}
-
-input {
-    background-color: rgba(255, 255, 255, 0.678);
-}
-
-.cab {
-    padding: 16px 96px;
-}
-
-.cab a {
-    color: #000000;
-    text-decoration: none;
-    height: 40px;
-    margin-right: 16px;
-}
-
-.bik {
-    border: solid;
-    display: flex;
-}
-
-.bik1,
-.bik2,
-.bik3 {
-    background-size: cover;
-    width: 22.625rem;
-    height: 22.625rem;
-    border: none;
-    transition: 0.5s;
-    flex-direction: column;
-}
-
-.bik1 {
-    background-image: url(https://assets.specialized.com/i/specialized/93123-30_EPIC-WC-EXPERT-CARB-WHT-PRL_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.bik2 {
-    background-image: url(https://assets.specialized.com/i/specialized/91323-70_EPIC-HT-FRYRED-WHT_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.bik3 {
-    background-image: url(https://assets.specialized.com/i/specialized/97223-00_AETHOS-SW-DI2-BRCH-ABLN-DUNEWHT_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.ob {
-    display: flex;
-    justify-content: center;
-    gap: 2.625rem;
-}
-
-h1,
-p {
-    text-align: center;
-    padding: 0 4rem;
-}
-
-.l1 {
-    border: .0313rem solid rgb(143, 135, 135);
-    width: 22.625rem;
-    height: 29.625rem;
-    border-radius: .3125rem;
-    box-shadow: .0125rem .0125rem .0125rem .0125rem;
-    border: none;
-}
-
-h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-i {
-    margin-top: 1.65rem;
-}
-
-.acessorio {
-    display: flex;
-    justify-content: center;
-    gap: 2.625rem;
-    margin-top: 2rem;
-}
-
-.acessorio1,
-.acessorio2,
-.acessorio3 {
-    background-size: cover;
-    width: 22.625rem;
-    height: 22.625rem;
-    border: none;
-    transition: 0.5s;
-    flex-direction: column;
-}
-
-.acessorio1 {
-    background-image: url(https://assets.specialized.com/i/specialized/60819-043_HLMT_CHAMONIX-HLMT-ANGI-MIPS-CPSC-BLK-M-L_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.acessorio2 {
-    background-image: url(https://assets.specialized.com/i/specialized/61020-514_SHOE_TORCH-10-RD-SHOE-BLK-42_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.acessorio3 {
-    background-image: url(https://assets.specialized.com/i/specialized/64220-390_APP_MOUNTAIN-LINER-BIB-SHORT-WSWAT-MEN-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.compo {
-    display: flex;
-    justify-content: center;
-    gap: 2.625rem;
-    margin-top: 2rem;
-}
-
-.compo1,
-.compo2,
-.compo3 {
-    background-size: cover;
-    width: 22.625rem;
-    height: 22.625rem;
-    border: none;
-    transition: 0.5s;
-    flex-direction: column;
-}
-
-.compo1 {
-    background-image: url(https://assets.specialized.com/i/specialized/21023-063_CMPNT_ROVAL-RAPIDE-RD-COCKPIT-CARB-BLK-318X420-100MM_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.compo2 {
-    background-image: url(https://assets.specialized.com/i/specialized/00122-502_TIRE_GROUND-CONTROL-CONTROL-2BR-T5-TIRE-TAN-SDWL-29X235_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.compo3 {
-    background-image: url(https://assets.specialized.com/i/specialized/30024-590_WHL_RAPIDE-CLX-II-TEAM-700C_HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.roupa {
-    display: flex;
-    justify-content: center;
-    gap: 2.625rem;
-    margin-top: 2rem;
-}
-
-.roupa1,
-.roupa2,
-.roupa3 {
-    background-size: cover;
-    width: 22.625rem;
-    height: 22.625rem;
-    border: none;
-    transition: 0.5s;
-    flex-direction: column;
-}
-
-.roupa1 {
-    background-image: url(https://assets.specialized.com/i/specialized/64022-480_APP_RBX-MIRAGE-JERSEY-SS-MEN-BLK-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.roupa2 {
-    background-image: url(https://assets.specialized.com/i/specialized/64122-230_APP_RBX-EXPERT-THERMAL-JERSEY-LS-MEN-BLK-M_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.roupa3 {
-    background-image: url(https://assets.specialized.com/i/specialized/64119-500_APP_RBX-CLASSIC-JERSEY-SS-WMN-BLK-M_HERO_PLP-HERO-SQUARE?$scom-plp-product-image-square$&fmt=auto);
-}
-
-.marca1 {
-    display: flex;
-    justify-content: center;
-    gap: 2.625rem;
-    margin-top: 2rem;
-    background-image: url(https://i.shgcdn.com/fbc878e3-614f-4396-84f5-b3edbfdabdf5/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
-    background-size: cover;
-    height: 50rem;
-}
-
-.xx {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: italic;
-;
-}
-.l1{flex-direction: column;
-     transition: 0.3s;}
-.l1:hover{transform:scale(1.1)}
-
-    </style>
 </head>
 
 <body>
-    <div class="pes">
-        <h1 class="xx">SPECIALIZED</h1>
-        <i class="bi bi-search"></i><input type="text" placeholder="O que você está procurando?" class="oi">
-    </div>
-    <div class="cab">
-        <a href="#1" class="oio">bicicletas</a>
-        <a href="#2" class="oio">acessorios</a>
-        <a href="#3" class="oio">componentes</a>
-        <a href="#4" class="oio">vestuários</a>
-        <a href="#5" class="oio">a specialized</a>
-    </div>
-    <div class="lei"></div>
-    <h1 id="1">bicicletas</h1>
-    <p>Perfeição. Difícil de definir, mas fácil de reconhecer. Nós nos especializamos na ciência da perfeição, e todas
-        as bicicletas que fazemos incorporam esta filosofia. Seja qual for a sua motivação ou disciplina, você irá se
-        beneficiar de nossa atenção aos detalhes e de nosso espírito inovador. Então, se você está se sujando em uma
-        bike de cross, dando tudo de si na estrada ou testando seus limites em um triathlon, você pode ficar tranquilo,
-        porque a bike em que você está é simplesmente a melhor.</p>
-    <div class="ob">
-        <div class="l1">
-            <div class="bik1"></div>
-            <p>Bicicleta Epic World Cup </p>
-            <h3>R$ 69.000,00</h3>
+    <main>
+        <div class="pes">
+            <h1 class="xx">SPECIALIZED</h1>
+            <i class="bi bi-search"></i><input type="text" placeholder="O que você está procurando?" class="oi">
         </div>
-        <div class="l1">
-            <div class="bik2"></div>
-            <p>Bicicleta Epic Hardtail</p>
-            <h3>R$ 19.000,00</h3>
+        <div class="cab">
+            <a href="#1" class="oio">bicicletas</a>
+            <a href="#2" class="oio">acessorios</a>
+            <a href="#3" class="oio">componentes</a>
+            <a href="#4" class="oio">vestuários</a>
+            <a href="#5" class="oio">a specialized</a>
+            <a href="#6" class="oio">contato</a>
         </div>
-        <div class="l1">
-            <div class="bik3"></div>
-            <p>Bicicleta S-Works Aethos</p>
-            <h3>R$ 82.000,00</h3>
+        <div class="lei"></div>
+        <h1 id="1">bicicletas</h1>
+        <p>Perfeição. Difícil de definir, mas fácil de reconhecer. Nós nos especializamos na ciência da perfeição, e
+            todas
+            as bicicletas que fazemos incorporam esta filosofia. Seja qual for a sua motivação ou disciplina, você irá
+            se
+            beneficiar de nossa atenção aos detalhes e de nosso espírito inovador. Então, se você está se sujando em uma
+            bike de cross, dando tudo de si na estrada ou testando seus limites em um triathlon, você pode ficar
+            tranquilo,
+            porque a bike em que você está é simplesmente a melhor.</p>
+        <div class="ob">
+            <div class="l1">
+                <div class="bik1"></div>
+                <p>Bicicleta Epic World Cup </p>
+                <h3>R$ 69.000,00</h3>
+            </div>
+            <div class="l1">
+                <div class="bik2"></div>
+                <p>Bicicleta Epic Hardtail</p>
+                <h3>R$ 19.000,00</h3>
+            </div>
+            <div class="l1">
+                <div class="bik3"></div>
+                <p>Bicicleta S-Works Aethos</p>
+                <h3>R$ 82.000,00</h3>
+            </div>
         </div>
-    </div>
-
-    <h1 id="2">Acessórios</h1>
-    <div class="acessorio">
-        <div class="l1">
-            <div class="acessorio1"></div>
-            <p>Propero III</p>
-            <h3>R$ 849,00</h3>
+        <h1 id="2">Acessórios</h1>
+        <div class="acessorio">
+            <div class="l1">
+                <div class="acessorio1"></div>
+                <p>Propero III</p>
+                <h3>R$ 849,00</h3>
+            </div>
+            <div class="l1">
+                <div class="acessorio2"></div>
+                <p>Sapatilha Torch 3.0 </p>
+                <h3>R$ 500,00</h3>
+            </div>
+            <div class="l1">
+                <div class="acessorio3"></div>
+                <p>Bretelle Interno </p>
+                <h3>R$ 900,00</h3>
+            </div>
         </div>
-        <div class="l1">
-            <div class="acessorio2"></div>
-            <p>Sapatilha Torch 3.0 </p>
-            <h3>R$ 500,00</h3>
+        <h1 id="3">Componentes</h1>
+        <div class="compo">
+            <div class="l1">
+                <div class="compo1"></div>
+                <p>Guidão Roval Rapide</p>
+                <h3>R$ 3.500,00</h3>
+            </div>
+            <div class="l1">
+                <div class="compo2"></div>
+                <p>Pneu Ground Control</p>
+                <h3>R$ 300,00</h3>
+            </div>
+            <div class="l1">
+                <div class="compo3"></div>
+                <p>Roda Rapide CLX II</p>
+                <h3>R$ 12.000,00</h3>
+            </div>
         </div>
-        <div class="l1">
-            <div class="acessorio3"></div>
-            <p>Bretelle Interno </p>
-            <h3>R$ 900,00</h3>
+        <h1 id="4">vestuários</h1>
+        <div class="roupa">
+            <div class="l1">
+                <div class="roupa1"></div>
+                <p>Jersey RBX Mirage Manga </p>
+                <h3>R$ 500,00</h3>
+            </div>
+            <div class="l1">
+                <div class="roupa2"></div>
+                <p>Jersey RBX Expert </p>
+                <h3>R$ 500,00</h3>
+            </div>
+            <div class="l1">
+                <div class="roupa3"></div>
+                <p>Jersey RBX Classic </p>
+                <h3>R$ 500,00</h3>
+            </div>
         </div>
-    </div>
-
-    <h1 id="3">Componentes</h1>
-    <div class="compo">
-        <div class="l1">
-            <div class="compo1"></div>
-            <p>Guidão Roval Rapide</p>
-            <h3>R$ 3.500,00</h3>
+        <div id="5" class="marca">
+            <h1>"Desde que Mountain Bikes Existem, Existe a Stumpjumper"</h1>
+            <div>
+                <div class="marca1"></div>
+            </div>
         </div>
-        <div class="l1">
-            <div class="compo2"></div>
-            <p>Pneu Ground Control</p>
-            <h3>R$ 300,00</h3>
+        <div id="6" class="cont">
+            <h1>contatos</h1>
+            <span>
+                <h4><i class="bi bi-whatsapp">(44)98802-5655</i></h4>
+            </span>
+            <h4 class="ema"><i class="bi bi-envelope-at">guel88442736@gmal.com</i></h4>
+            <h4><i class="bi bi-github">luizmiguel22</i></h4>
         </div>
-        <div class="l1">
-            <div class="compo3"></div>
-            <p>Roda Rapide CLX II</p>
-            <h3>R$ 12.000,00</h3>
-        </div>
-    </div>
-
-    <h1 id="4">vestuários</h1>
-    <div class="roupa">
-        <div class="l1">
-            <div class="roupa1"></div>
-            <p>Jersey RBX Mirage Manga  </p>
-            <h3>R$ 500,00</h3>
-        </div>
-        <div class="l1">
-            <div class="roupa2"></div>
-            <p>Jersey RBX Expert  </p>
-            <h3>R$ 500,00</h3>
-        </div>
-        <div class="l1">
-            <div class="roupa3"></div>
-            <p>Jersey RBX Classic  </p>
-            <h3>R$ 500,00</h3>
-        </div>
-    </div>
-    <div id="5" class="marca">
-        <h1>"Desde que Mountain Bikes Existem, Existe a Stumpjumper"</h1>
-        <div>
-            <div class="marca1"></div>
-        </div>
-    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
+ <script src="spe.js"></script>
 
 </html>
