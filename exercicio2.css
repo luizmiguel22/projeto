@@ -1,0 +1,28 @@
+:root {
+    --cor1: black;
+    --cor2: blue;
+    --cor3: red;
+    --cor4: green;
+}
+.cont{display: flex;
+width: 100%;
+height: 100vh;
+flex-direction: column;
+flex-wrap: wrap;}
+aside{width: 10%;
+height: 100vh;
+background-color: var(--cor1);}
+header{width: 90%;
+ height: 20vh;
+background-color: var(--cor4);}
+
+main{width: 90%;
+height: 60vh;
+background-color: var(--cor3);}
+
+footer{width: 100%;
+height: 20%;
+background-color: var(--cor2);}
+body{overflow: hidden;
+margin: 0;
+padding: 0;}
