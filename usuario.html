@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .list {
+            border: 7px solid #5B9DEC;
+            list-style-type: none;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 27vw;
+            margin: 0;
+            padding: 0;
+            min-width: 300px;
+        }
+
+        img {
+            border-radius: 100%;
+        }
+
+        li {
+            border: .0625rem;
+            box-shadow: 0 0 .125rem 0 rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            width: 27vw;
+            min-width: 300px;
+        }
+
+        .item-img {
+            flex-shrink: 0;
+        }
+
+        .item-cont {
+            flex-grow: 1;
+          
+        }
+
+        .oi {
+            min-width: 18.75rem;
+            
+            margin: 0;
+            padding: 0;
+        }
+        h4{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        .num{color: rgb(10, 10, 10, 0.6)}
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <div class="oi">
+            <li class="list-item"><img src="https://randomuser.me/api/portraits/men/69.jpg" alt="" class="item-img">
+                <div class="oi">
+                    <div class="item-cont">
+                        <h4>hiago vieira</h4>
+                    </div>
+                    <div class="num">
+                        <div>(44)9 88025655</div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-item"><img src="https://randomuser.me/api/portraits/women/35.jpg" alt="" class="item-img">
+                <div>
+                    <div class="item-cont">
+                        <h4>Wendy Lewis</h4>
+                    </div>
+                    <div class="num">
+                        <div>(44)9 88025655</div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-item"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="" class="item-img">
+                <div>
+                    <div class="item-cont">
+                        <h4>Isaac Murphy</h4>
+                    </div>
+                    <div class="num">
+                        <div>(44)9 88025655</div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-item"><img src="https://randomuser.me/api/portraits/women/53.jpg" alt="" class="item-img">
+                <div>
+                    <div class="item-cont">
+                        <h4>Renee Gray</h4>
+                    </div>
+                    <div class="num">
+                        <div>(44)9 88025655</div>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </ul>
+</body>
+
+</html>
